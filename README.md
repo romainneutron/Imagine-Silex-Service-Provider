@@ -1,5 +1,7 @@
 # Imagine Silex ServiceProvider
 
+[![Build Status](https://travis-ci.org/romainneutron/Imagine-Silex-Service-Provider.png)](https://travis-ci.org/romainneutron/Imagine-Silex-Service-Provider)
+
 ## Usage
 
 ```php
