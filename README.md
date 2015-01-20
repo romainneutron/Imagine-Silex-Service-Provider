@@ -16,7 +16,7 @@ $app->register(new ImagineServiceProvider());
 // OR choose your own driver
 $app->register(new ImagineServiceProvider(), array('imagine.driver' => 'Gmagick'));
 
-$app->match('/image-resize', function(Request $request) {
+$app->match('/image-resize', function(Request $request) use ($app) {
     $app['imagine']
             ->open($request->files->get('image')->getPathname())
             ->resize(new Box(320, 240))
